@@ -1,0 +1,843 @@
+@charset "UTF-8";
+/*!
+**  Author: Kale Chao | FakeCityMan
+**  Blog: kalechao87@github.io
+**/
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+img {
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ==========================================================================
+ 瀹氫箟鍙橀噺
+ ========================================================================== */
+/* ==========================================================================
+瀹氫箟鍙橀噺缁撴潫
+========================================================================== */
+body {
+  font-family: 'Avenir Next', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #000;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.ab-element {
+  position: absolute;
+}
+
+.block-img {
+  display: block;
+  max-width: 100%;
+}
+
+.ab-img {
+  position: absolute;
+}
+
+.ab-block-img {
+  display: block;
+  position: absolute;
+  max-width: 100%;
+}
+
+.hvcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.hcenter {
+  position: absolute;
+  left: 50%;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.vcenter {
+  position: absolute;
+  top: 50%;
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.scrolly-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+#common-bg {
+  background-image: url("../images/universal-bg.jpg");
+}
+
+#loading-num {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  font-size: 56px;
+  color: #fff;
+}
+
+/*=================cover start=======================*/
+.cover-sprite, .cover-football, .cover-horn, .cover-logo, .cover-pro, .cover-title {
+  background-image: url('../images/cover-s600662413b.png');
+  background-repeat: no-repeat;
+}
+
+.cover-football {
+  background-position: 0 -453px;
+  height: 352px;
+  width: 352px;
+}
+
+.cover-horn {
+  background-position: 0 -166px;
+  height: 119px;
+  width: 339px;
+}
+
+.cover-logo {
+  background-position: 0 0;
+  height: 18px;
+  width: 187px;
+}
+
+.cover-pro {
+  background-position: -187px 0;
+  height: 166px;
+  width: 231px;
+}
+
+.cover-title {
+  background-position: 0 -285px;
+  height: 168px;
+  width: 479px;
+}
+
+#top-logo {
+  top: 36px;
+  left: 44px;
+}
+
+#main {
+  top: 236px;
+  left: 46px;
+  width: 593px;
+  height: 480px;
+}
+
+#football {
+  top: 0;
+  left: 100px;
+}
+
+#cover-title {
+  top: 312px;
+  left: 35px;
+}
+
+#cover-pro {
+  top: 180px;
+  left: 0;
+}
+
+#horn {
+  top: 224px;
+  left: 254px;
+}
+
+#join-btn {
+  bottom: 164px;
+  left: 198px;
+}
+
+#rank-btn {
+  bottom: 72px;
+  left: 198px;
+}
+
+#rule-container {
+  top: 71px;
+  width: 525px;
+  background: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 31px;
+  font-size: 21px;
+}
+#rule-container p {
+  margin: 0;
+}
+
+#rule-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 18px;
+  color: #83ac14;
+}
+
+#rule1, #rule2 {
+  margin-bottom: 12px !important;
+}
+
+.green-container {
+  position: relative;
+  border: 2px solid #009944;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 36px;
+  padding-top: 32px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.rule-subtitle {
+  position: absolute;
+  top: -22px;
+  width: 177px;
+  height: 44px;
+  background: #fee900;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  text-align: center;
+  color: #4a6600;
+  font-size: 25px;
+  line-height: 44px;
+}
+
+.misc-sprite, .misc-active-btn, .active-btn, .misc-close-btn, .misc-medium-active-btn, .medium-btn-active, .misc-medium-normal-btn, .medium-btn-normal, .misc-music-bg, #music-control-main, .misc-music-icon, .music-control-icon, .misc-normal-btn, .normal-btn, .misc-over-content, .misc-small-active-btn, .guess-btn-active, .misc-small-normal-btn, .guess-btn-normal {
+  background-image: url('../images/misc-s718f37c127.png');
+  background-repeat: no-repeat;
+}
+
+.misc-active-btn, .active-btn {
+  background-position: 0 -121px;
+  height: 67px;
+  width: 250px;
+}
+
+.misc-close-btn {
+  background-position: -411px -58px;
+  height: 53px;
+  width: 53px;
+}
+
+.misc-medium-active-btn, .medium-btn-active {
+  background-position: 0 -58px;
+  height: 63px;
+  width: 197px;
+}
+
+.misc-medium-normal-btn, .medium-btn-normal {
+  background-position: -197px -58px;
+  height: 63px;
+  width: 195px;
+}
+
+.misc-music-bg, #music-control-main {
+  background-position: -297px 0;
+  height: 58px;
+  width: 58px;
+}
+
+.misc-music-icon, .music-control-icon {
+  background-position: -392px -58px;
+  height: 31px;
+  width: 19px;
+}
+
+.misc-normal-btn, .normal-btn {
+  background-position: -250px -121px;
+  height: 68px;
+  width: 252px;
+}
+
+.misc-over-content {
+  background-position: 0 -189px;
+  height: 236px;
+  width: 513px;
+}
+
+.misc-small-active-btn, .guess-btn-active {
+  background-position: -149px 0;
+  height: 49px;
+  width: 148px;
+}
+
+.misc-small-normal-btn, .guess-btn-normal {
+  background-position: 0 0;
+  height: 49px;
+  width: 149px;
+}
+
+#music-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  margin: 24px;
+  visibility: hidden;
+}
+
+#music-control-main {
+  position: absolute;
+}
+
+.music-control-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.normal-btn {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 68px;
+  color: #2c4c0b;
+}
+
+.active-btn {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 68px;
+  color: #fff;
+}
+
+#start {
+  position: relative;
+  left: 50%;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  margin-left: -126px;
+}
+
+#over-alert-container {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+#over-alert {
+  top: 30%;
+}
+
+#close-over-alert {
+  top: -27px;
+  right: -27px;
+}
+
+.guess-group {
+  position: absolute;
+  left: 50%;
+  width: 511px;
+  height: 215px;
+  margin-left: -255px;
+}
+
+#guess1 {
+  top: 64px;
+}
+
+.team-group {
+  position: absolute;
+  width: 163px;
+  height: 100%;
+}
+
+.team-left {
+  top: 0;
+  left: 0;
+}
+
+.team-right {
+  top: 0;
+  right: 0;
+}
+
+.team-logo-container {
+  width: 163px;
+  height: 160px;
+}
+
+.team-logo {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+}
+
+.team-name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 160px;
+  color: #010101;
+}
+
+.vs-info-normal {
+  position: absolute;
+  left: 163px;
+  width: 185px;
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.vs-normal {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.guess-btn-normal {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  font-size: 25px;
+  text-align: center;
+  line-height: 49px;
+}
+
+.guess-btn-active {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  font-size: 25px;
+  text-align: center;
+  line-height: 49px;
+}
+
+#guess2 {
+  top: 333px;
+}
+
+#guess3 {
+  top: 609px;
+}
+
+#confirm-three {
+  position: absolute;
+  top: 871px;
+  left: 50%;
+  margin-bottom: 12px;
+  margin-left: -126px;
+}
+
+.guess-one-group {
+  top: 210px;
+  width: 561px;
+  height: 404px;
+}
+
+.team-group-large {
+  position: absolute;
+  width: 196px;
+  height: 100%;
+}
+
+.team-name-large {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.team-logo-container-large {
+  position: absolute;
+  top: 83px;
+  left: 50%;
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  width: 188px;
+  height: 184px;
+}
+
+.medium-btn-normal {
+  font-size: 33px;
+  color: #041407;
+  text-align: center;
+  line-height: 63px;
+}
+
+.medium-btn-active {
+  font-size: 33px;
+  color: #041407;
+  text-align: center;
+  line-height: 63px;
+}
+
+.guess-one-btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.vs-info-large {
+  position: absolute;
+  left: 190px;
+  width: 180px;
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.vs-large {
+  margin-top: 128px;
+  margin-bottom: 12px;
+  font-size: 49px;
+  font-weight: 700;
+}
+
+#confirm-one {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  margin-bottom: 12px;
+  margin-left: -126px;
+}
+
+#cover, #rule, #over-alert-container, #guess-three, #guess-one {
+  display: none;
+}
+
+#test {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 56px;
+}
+
+/*# sourceMappingURL=main.css.map */
